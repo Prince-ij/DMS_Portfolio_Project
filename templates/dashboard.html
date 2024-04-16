@@ -33,7 +33,7 @@
 				<td> {{ debtor.amount }} </td>
 				<td> {{ debtor.collected_on }} </td>
 			<td> 
-			<button type="button" class="btn btn-primary" data-toggle="moadal" data-target="#settleModal{{debtor.id}}" >
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settleModal{{debtor.id}}" >
 				Settle
 			</button>
 		<div class="modalfade" id="settleModal{{ debtor.id }}" tabindex="-1" role="dialog" aria-labelledby="settleModalLabel" aria-hidden="true">
@@ -46,7 +46,7 @@
 		</button>
 		</div>
 		<div class="modal-body">
-		<form action="{{ url_for('settled_debt', debtor.id = debtor.id) }}" method="post">
+		<form action="{{ url_for('settled_debt', debtor.id=debtor.id) }}" method="post">
 		<div class="form-group">
 			<label for "settled_on"> Date Settled </label>
 		<input type="date" class="form-control" id="settled_on" name="settled_on" required>

@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #f8f9fa;
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+ 
+   cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
 <meta charset="UTF-8">
-<meta name="viewport" content="widtb=device-width initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Debtor Mangement System </title>
 </head>
 <body>
+<div class="container">
 	<h1> Welcome to Debtor Management System </h1>
 	<p> Keep track of your debtors, settle debts, and maintain a clear record. </p>
 
 	<p> Manage Your debtors efficiently with our system <p>
 	<button><a href="{{url_for('register') }}"> Get Started </a></button>
 	<p> Or Login </p>
-	<button><a href="{{url_for('login') }}"> Get Started </a></button>
+	<button><a href="{{url_for('login') }}">Login </a></button>
 	<h2> About DMS </h2>
 	<p> DMS is a project I designed to help business men track their debtors easily and safely store them with us. No need of paper stress anymore, you don't need to fear rats eating away your debtor records and your debtors running away because you've got no evidence. Here at DMS, we help you avoid that. Join DMS now. <p>
 
@@ -27,6 +75,6 @@
 		<li> <a href="https://www.linkedin.com/in/ibrahim-aminu-547009244" > Linkedln </a> </li>
 		</ul>
 	</footer>
-
+</div>
 </body>
 </html>

@@ -10,7 +10,7 @@ bcrypt = Bcrypt()
 app = Flask('__name__')
 app.debug = True
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 @app.route('/')
 def index():
