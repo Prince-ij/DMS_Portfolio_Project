@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Add Debtor </title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+	<h2> Add Debtor </h2>
+	<form action=" {{ url_for('add_debtor') }}" method="post">
+	<div class="form-group">
+	<label for ="first_name"> First Name </label>
+	<input type="text" class="form-control" id="first_name" name="last_name" required>
+	</div>
+	<div class="form-group">
+	<label for="last_name"> Last Name </label>
+	<input type="text" class="form-control" id="last_name" name="last_name" required>
+	</div>
+	<div class="form-group">
+	<label for="purchase"> Purchase </label>
+	<input type="text" class="form-control" id="purchase" name="purchase" required>
+	</div>
+	<div class="form-group">
+	<label for="quantity"> Quantity </label>
+	<input type="number" class="form-control" id="quantity" name="quantity" required>
+	</div>
+	<div class="form-group">
+	<label for="amount"> Amount </label>
+	<input type="number" class="form-control" id="amount" name="amount" required>
+	</div>
+	<div  class="form-group">
+	<label for="collected_on"> Date </label>
+	<input type="date" class="form-control" id="collected_on" name="collected_on" required>
+	</div>
+	<button type="submit" class="btn btn-primary">
+		Submit
+	</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
